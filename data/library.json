@@ -36,19 +36,19 @@
   "title_sa": "उपनिषदः"
  },
  {
-  "desc_en": "The great epic of the Bharata dynasty. Coming soon.",
-  "desc_ne": "भरतवंशको महाकाव्य। चाँडै आउँदैछ।",
+  "desc_en": "100,000 verses — 10 key parvas from Adi to Sauptika.",
+  "desc_ne": "१,००,००० श्लोक — आदिदेखि सौप्तिकसम्म १० मुख्य पर्व।",
   "id": "mahabharata",
-  "status": "planned",
+  "status": "complete",
   "title_en": "Mahabharata",
   "title_ne": "महाभारत",
   "title_sa": "महाभारतम्"
  },
  {
-  "desc_en": "Stories of Krishna and the devotees — 12 cantos. Coming soon.",
-  "desc_ne": "कृष्ण र भक्तहरूका कथा — १२ स्कन्ध। चाँडै आउँदैछ।",
+  "desc_en": "12 cantos — Krishna's life, devotees, Uddhava Gita.",
+  "desc_ne": "१२ स्कन्ध — कृष्णलीला, भक्तहरू, उद्धव गीता।",
   "id": "bhagavata-purana",
-  "status": "planned",
+  "status": "complete",
   "title_en": "Bhagavata Purana",
   "title_ne": "भागवत पुराण",
   "title_sa": "भागवतपुराण"
