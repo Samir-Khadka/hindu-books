@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}{{ t(book, lang, "title") }}{% endblock %}
+{% block content %}
+<p><a href="/?lang={{ lang }}">← {{ "पुस्तकालय" if lang=="ne" else "Library" }}</a></p>
+<h2>{{ t(book, lang, "title") }}</h2>
+<p style="color:var(--gold);font-size:1.2rem">{{ book.title_sa }}</p>
+<p>{{ book.subtitle_en if lang=="en" else book.subtitle_ne }}</p>
+{% for ch in book.chapters %}
+<div class="card">
+<h2>{{ ch.n }}. {{ t(ch, lang, "title") }}</h2>
+<p style="color:var(--gold)">{{ ch.title_sa }} · {{ ch.verses }} {{ "श्लोक" if lang=="ne" else "verses" }}</p>
+<p>{{ ch.summary_en if lang=="en" else ch.summary_ne }}</p>
+<a class="btn" href="/book/{{ book.id }}/chapter/{{ ch.n }}?lang={{ lang }}">{{ "पढ्नुहोस्" if lang=="ne" else "Read chapter" }}</a>
+</div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Hindu Books{% endblock %}</title>
+<style>
+:root{--bg:#FAF6ED;--ink:#2b2b2b;--violet:#4c1d95;--gold:#b8860b;--card:#fff}
+*{box-sizing:border-box}
+body{font-family:system-ui,"Noto Sans Devanagari",sans-serif;background:var(--bg);
+color:var(--ink);margin:0;line-height:1.7}
+header{background:var(--violet);color:#fff;padding:1rem}
+header .wrap{max-width:900px;margin:0 auto;display:flex;justify-content:space-between;
+align-items:center}
+header a{color:#fff;text-decoration:none}
+header h1{margin:0;font-size:1.3rem}
+.lang a{border:1px solid #fff;border-radius:6px;padding:.2rem .7rem;margin-left:.4rem;
+font-size:.85rem}
+.lang a.on{background:#fff;color:var(--violet)}
+main{max-width:900px;margin:0 auto;padding:1.5rem 1rem}
+.card{background:var(--card);border:1px solid #e8dfc8;border-radius:12px;
+padding:1.2rem;margin:1rem 0}
+.card h2{margin-top:0;color:var(--violet)}
+a{color:var(--violet)}
+.btn{display:inline-block;background:var(--violet);color:#fff!important;
+padding:.6rem 1.3rem;border-radius:8px;text-decoration:none;margin-top:.6rem}
+.verse{background:#fdfaf2;border-left:4px solid var(--gold);padding:1rem 1.2rem;
+margin:1.2rem 0;border-radius:0 8px 8px 0}
+.verse .sa{font-size:1.15rem;color:var(--violet)}
+.verse .ref{color:var(--gold);font-size:.85rem;font-weight:700}
+nav.ch{display:flex;justify-content:space-between;margin-top:2rem}
+.search{display:flex;gap:.5rem;margin:1rem 0}
+.search input{flex:1;padding:.6rem;border:1px solid #e8dfc8;border-radius:8px;
+font-size:1rem}
+.search button{background:var(--violet);color:#fff;border:0;border-radius:8px;
+padding:.6rem 1.2rem;cursor:pointer}
+footer{text-align:center;color:#8a8a8a;font-size:.85rem;padding:2rem 1rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}
+.badge{display:inline-block;font-size:.75rem;background:#f3ead3;color:#7a5c00;
+border-radius:20px;padding:.15rem .7rem;margin-left:.5rem}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a href="/?lang={{ lang }}"><h1>📚 {{ "हिन्दू पुस्तकहरू" if lang=="ne" else "Hindu Books" }}</h1></a>
+<div class="lang">
+<a href="{{ request.url.path }}?lang=en" class="{{ 'on' if lang=='en' }}">EN</a><a href="{{ request.url.path }}?lang=ne" class="{{ 'on' if lang=='ne' }}">ने</a>
+</div></div></header>
+<main>{% block content %}{% endblock %}</main>
+<footer>{{ "स्वतन्त्र ज्ञान — सबैका लागि निःशुल्क" if lang=="ne" else "Free knowledge — for everyone, forever" }}</footer>
+</body>
+</html>

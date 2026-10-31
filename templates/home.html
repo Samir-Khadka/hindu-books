@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}{{ "हिन्दू पुस्तकहरू" if lang=="ne" else "Hindu Books" }}{% endblock %}
+{% block content %}
+<h2>{{ "पवित्र ग्रन्थहरूको निःशुल्क पुस्तकालय" if lang=="ne" else "A free library of sacred texts" }}</h2>
+<form class="search" action="/search" method="get">
+<input type="hidden" name="lang" value="{{ lang }}">
+<input type="text" name="q" placeholder="{{ 'खोज्नुहोस्…' if lang=='ne' else 'Search verses, chapters…' }}">
+<button type="submit">{{ "खोज" if lang=="ne" else "Search" }}</button>
+</form>
+<div class="grid">
+{% for b in library %}
+<div class="card">
+<h2>{{ t(b, lang, "title") }}</h2>
+<p style="color:var(--gold)">{{ b.title_sa }}</p>
+<p>{{ b.desc_en if lang=="en" else b.desc_ne }}</p>
+{% if b.status == "complete" %}
+<a class="btn" href="/book/{{ b.id }}?lang={{ lang }}">{{ "पढ्नुहोस्" if lang=="ne" else "Read" }}</a>
+{% else %}
+<span class="badge">{{ "चाँडै" if lang=="ne" else "Coming soon" }}</span>
+{% endif %}
+</div>
+{% endfor %}
+</div>
+{% endblock %}

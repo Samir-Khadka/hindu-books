@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}{{ "खोज" if lang=="ne" else "Search" }}{% endblock %}
+{% block content %}
+<h2>{{ "खोज" if lang=="ne" else "Search" }}: "{{ q }}"</h2>
+<form class="search" action="/search" method="get">
+<input type="hidden" name="lang" value="{{ lang }}">
+<input type="text" name="q" value="{{ q }}">
+<button type="submit">{{ "खोज" if lang=="ne" else "Search" }}</button>
+</form>
+{% for r in results %}
+<div class="card">
+<h2>{{ t(r.book, lang, "title") }} — {{ r.ch.n }}. {{ t(r.ch, lang, "title") }}</h2>
+{% if r.verse %}
+<div class="verse"><div class="sa">{{ r.verse.sa }}</div>
+<p>{{ r.verse.en if lang=="en" else r.verse.ne }}</p></div>
+{% else %}
+<p>{{ r.ch.summary_en if lang=="en" else r.ch.summary_ne }}</p>
+{% endif %}
+<a class="btn" href="/book/{{ r.book.id }}/chapter/{{ r.ch.n }}?lang={{ lang }}">{{ "पढ्नुहोस्" if lang=="ne" else "Read" }}</a>
+</div>
+{% else %}
+<p>{{ "केही भेटिएन।" if lang=="ne" else "No results." }}</p>
+{% endfor %}
+{% endblock %}

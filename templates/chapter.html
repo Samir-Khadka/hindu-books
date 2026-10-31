@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}{{ ch.n }}. {{ t(ch, lang, "title") }}{% endblock %}
+{% block content %}
+<p><a href="/book/{{ book.id }}?lang={{ lang }}">← {{ t(book, lang, "title") }}</a></p>
+<h2>{{ ch.n }}. {{ t(ch, lang, "title") }}</h2>
+<p style="color:var(--gold);font-size:1.2rem">{{ ch.title_sa }}</p>
+<div class="card">
+<h2>{{ "सारांश" if lang=="ne" else "Summary" }}</h2>
+<p>{{ ch.summary_en if lang=="en" else ch.summary_ne }}</p>
+</div>
+{% if ch.key_verses %}
+<h2>{{ "मुख्य श्लोकहरू" if lang=="ne" else "Key verses" }}</h2>
+{% for v in ch.key_verses %}
+<div class="verse">
+<div class="sa">{{ v.sa }}</div>
+<p>{{ v.en if lang=="en" else v.ne }}</p>
+<div class="ref">{{ t(book, lang, "title") }} {{ v.n }}</div>
+</div>
+{% endfor %}
+{% else %}
+<p style="color:#8a8a8a">{{ "पूर्ण पाठ चाँडै थपिँदैछ।" if lang=="ne" else "Full verse text is being added." }}</p>
+{% endif %}
+<nav class="ch">
+{% if prev_n %}<a class="btn" href="/book/{{ book.id }}/chapter/{{ prev_n }}?lang={{ lang }}">← {{ prev_n }}</a>{% else %}<span></span>{% endif %}
+{% if next_n %}<a class="btn" href="/book/{{ book.id }}/chapter/{{ next_n }}?lang={{ lang }}">{{ next_n }} →</a>{% endif %}
+</nav>
+{% endblock %}
