@@ -1,1 +1,74 @@
-[{"desc_en":"Krishna's 700-verse dialogue with Arjuna — the essence of the Upanishads.","desc_ne":"अर्जुनसँग श्रीकृष्णको ७०० श्लोके संवाद — उपनिषद्हरूको सार।","id":"bhagavad-gita","status":"complete","title_en":"Bhagavad Gita","title_ne":"भगवद् गीता","title_sa":"भगवद्गीता"},{"desc_en":"Tulsidas's 40-verse hymn to Hanuman — strength, devotion, protection.","desc_ne":"हनुमानलाई तुलसीदासको ४० श्लोके स्तोत्र — बल, भक्ति, रक्षा।","id":"hanuman-chalisa","status":"complete","title_en":"Hanuman Chalisa","title_ne":"हनुमान चालीसा","title_sa":"हनुमानचालीसा"},{"desc_en":"Valmiki's epic of Rama — 7 kandas on dharma and the ideal life.","desc_ne":"रामको वाल्मीकि महाकाव्य — धर्म र आदर्श जीवनका ७ काण्ड।","id":"ramayana","status":"complete","title_en":"Ramayana","title_ne":"रामायण","title_sa":"रामायण"},{"desc_en":"The philosophical heart of the Vedas — 5 principal Upanishads.","desc_ne":"वेदहरूको दार्शनिक हृदय — ५ मुख्य उपनिषद्।","id":"upanishads","status":"complete","title_en":"Upanishads","title_ne":"उपनिषद्","title_sa":"उपनिषदः"},{"desc_en":"The great epic of the Bharata dynasty. Coming soon.","desc_ne":"भरतवंशको महाकाव्य। चाँडै आउँदैछ।","id":"mahabharata","status":"planned","title_en":"Mahabharata","title_ne":"महाभारत","title_sa":"महाभारतम्"},{"desc_en":"Stories of Krishna and the devotees — 12 cantos. Coming soon.","desc_ne":"कृष्ण र भक्तहरूका कथा — १२ स्कन्ध। चाँडै आउँदैछ।","id":"bhagavata-purana","status":"planned","title_en":"Bhagavata Purana","title_ne":"भागवत पुराण","title_sa":"भागवतपुराण"}]
+[
+ {
+  "desc_en": "Krishna's 700-verse dialogue with Arjuna — the essence of the Upanishads.",
+  "desc_ne": "अर्जुनसँग श्रीकृष्णको ७०० श्लोके संवाद — उपनिषद्हरूको सार।",
+  "id": "bhagavad-gita",
+  "status": "complete",
+  "title_en": "Bhagavad Gita",
+  "title_ne": "भगवद् गीता",
+  "title_sa": "भगवद्गीता"
+ },
+ {
+  "desc_en": "Tulsidas's 40-verse hymn to Hanuman — strength, devotion, protection.",
+  "desc_ne": "हनुमानलाई तुलसीदासको ४० श्लोके स्तोत्र — बल, भक्ति, रक्षा।",
+  "id": "hanuman-chalisa",
+  "status": "complete",
+  "title_en": "Hanuman Chalisa",
+  "title_ne": "हनुमान चालीसा",
+  "title_sa": "हनुमानचालीसा"
+ },
+ {
+  "desc_en": "Valmiki's epic of Rama — 7 kandas on dharma and the ideal life.",
+  "desc_ne": "रामको वाल्मीकि महाकाव्य — धर्म र आदर्श जीवनका ७ काण्ड।",
+  "id": "ramayana",
+  "status": "complete",
+  "title_en": "Ramayana",
+  "title_ne": "रामायण",
+  "title_sa": "रामायण"
+ },
+ {
+  "desc_en": "The philosophical heart of the Vedas — 5 principal Upanishads.",
+  "desc_ne": "वेदहरूको दार्शनिक हृदय — ५ मुख्य उपनिषद्।",
+  "id": "upanishads",
+  "status": "complete",
+  "title_en": "Upanishads",
+  "title_ne": "उपनिषद्",
+  "title_sa": "उपनिषदः"
+ },
+ {
+  "desc_en": "The great epic of the Bharata dynasty. Coming soon.",
+  "desc_ne": "भरतवंशको महाकाव्य। चाँडै आउँदैछ।",
+  "id": "mahabharata",
+  "status": "planned",
+  "title_en": "Mahabharata",
+  "title_ne": "महाभारत",
+  "title_sa": "महाभारतम्"
+ },
+ {
+  "desc_en": "Stories of Krishna and the devotees — 12 cantos. Coming soon.",
+  "desc_ne": "कृष्ण र भक्तहरूका कथा — १२ स्कन्ध। चाँडै आउँदैछ।",
+  "id": "bhagavata-purana",
+  "status": "planned",
+  "title_en": "Bhagavata Purana",
+  "title_ne": "भागवत पुराण",
+  "title_sa": "भागवतपुराण"
+ },
+ {
+  "id": "vedas",
+  "status": "complete",
+  "title_en": "The Four Vedas",
+  "title_ne": "चार वेद",
+  "title_sa": "चतुर्वेद",
+  "desc_en": "Rig, Sama, Yajur, Atharva — the oldest mantras, including Gayatri.",
+  "desc_ne": "ऋक्, साम, यजुः, अथर्व — गायत्रीसहित प्राचीनतम मन्त्रहरू।"
+ },
+ {
+  "id": "puranas",
+  "status": "complete",
+  "title_en": "The Puranas",
+  "title_ne": "पुराणहरू",
+  "title_sa": "पुराणानि",
+  "desc_en": "Bhagavata, Vishnu, Shiva, Markandeya — stories of avatars and devotees.",
+  "desc_ne": "भागवत, विष्णु, शिव, मार्कण्डेय — अवतार र भक्तहरूका कथा।"
+ }
+]
